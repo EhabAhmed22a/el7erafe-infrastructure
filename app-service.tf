@@ -27,7 +27,7 @@ resource "azurerm_windows_web_app" "backend" {
     ]
   }
   site_config {
-    
+    websockets_enabled = true
     always_on = false
     
     application_stack {
